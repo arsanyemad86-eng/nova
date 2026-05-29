@@ -10,8 +10,8 @@ function Navbar({ isDark, setIsDark }) {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-4 bg-[#111111]/90 backdrop-blur-md border-b border-[#1f1f1f]">
-      <Link to="/" className="text-white font-bold text-xl tracking-widest shrink-0">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-4 bg-white/10 backdrop-blur-sm border-b border-white/10">
+      <Link to="/" className="text-gray-900 dark:text-white font-bold text-xl tracking-widest shrink-0">
         NOVA
       </Link>
       <div className="flex items-center gap-3 overflow-x-auto">
@@ -21,7 +21,7 @@ function Navbar({ isDark, setIsDark }) {
         <Link to="/pricing" className="text-muted hover:text-white transition-colors text-sm shrink-0">Pricing</Link>
         <button
           onClick={() => setIsDark(!isDark)}
-          className="text-sm px-3 py-1 rounded-lg border border-white/10 text-gray-400 hover:text-white hover:border-white/30 transition-colors shrink-0"
+          className="text-sm px-3 py-1 rounded-lg border border-white/10 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:border-gray-400 dark:hover:border-white/30 transition-colors shrink-0"
         >
           {isDark ? '☀️ Light' : '🌙 Dark'}
         </button>

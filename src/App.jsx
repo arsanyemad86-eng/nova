@@ -21,7 +21,7 @@ function App() {
   }, [isDark])
 
   return (
-    <div className={isDark ? 'bg-[#0a0a0a] min-h-screen' : 'bg-white min-h-screen'}>
+    <div className={isDark ? 'bg-[#050505] min-h-screen' : 'bg-white min-h-screen'}>
     <ParticlesBackground />
       <Navbar isDark={isDark} setIsDark={setIsDark} />
       <main className="pt-16">
