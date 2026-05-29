@@ -21,7 +21,7 @@ function Navbar({ isDark, setIsDark }) {
         <Link to="/pricing" className="text-muted hover:text-white transition-colors text-sm">Pricing</Link>
         <button
           onClick={() => setIsDark(!isDark)}
-          className="text-sm px-3 py-1 rounded-lg border border-white/10 text-gray-400 hover:text-white hover:border-white/30 transition-colors"
+          className="text-sm px-3 py-1 rounded-lg border border-white/10 text-gray-400 hover:text-white hover:border-white/30 transition-colors shrink-0"
         >
           {isDark ? '☀️ Light' : '🌙 Dark'}
         </button>
